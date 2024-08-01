@@ -1,0 +1,57 @@
+/* Style the game board */
+.game-board {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the game controls */
+  .game-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .game-controls button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .game-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #game-status {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
